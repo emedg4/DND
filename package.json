@@ -1,0 +1,11 @@
+{
+  "name": "dnd-sheet",
+  "version": "1.0.0",
+  "description": "Application that is going to be used to play dnd in an efficient way.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "author": "Emedg4",
+  "license": "ISC"
+}
