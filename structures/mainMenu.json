@@ -1,0 +1,13 @@
+{
+    "login":{
+        "username":"Username for login purpose",
+        "password":"Password for login purpose"
+    },
+
+    "MainMenu": {
+        "CreateRoom":"Creates 'Room' to prepare the sesion (pick roles and characters)",
+        "CreateCharacter":"Creates a character sheet for a user",
+        "SeeCharacters":"List al character sheets and check them"
+    }
+
+}
