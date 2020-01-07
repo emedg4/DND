@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+.main {
+  height: 100%;
+  background-image: url("./../images/bg5.jpeg");
+  background-repeat:no-repeat;
+  background-size:cover;
+} 
+#login-box {
+  padding: 50px;
+  margin: 20px;
+  text-align: center;
+
+}
+
+#first-message {
+  font-family: 'Press Start 2P', cursive;
+  color: blanchedalmond;
+  text-align: center;
+}

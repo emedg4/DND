@@ -1,10 +1,28 @@
 version: '3'
 services:
   nginx:
+    container_name: nginx_dnd
     build: .
     ports:
       - "9000:80"
       - "9001:443"
     volumes:
       - .:/usr/share/nginx/html
+    networks: 
+      - dnd
+  pg:
+    container_name: pg_dnd
+    build: ./pg
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: root
+      POSTGRES_DB: dnd    
+    ports:
+      - "9003:5432"
+    volumes:
+      - ~/.pg/dnd:/var/lib/postgresql
+    networks:
+      - dnd
 
+networks:
+  dnd:

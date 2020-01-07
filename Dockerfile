@@ -5,5 +5,6 @@ RUN npm install -y node
 WORKDIR /usr/share/nginx/html
 RUN npm install
 COPY .docker/nginx-config/default.conf /etc/nginx/conf.d 
+RUN /etc/init.d/nginx restart
 CMD ["npm", "run", "start"]
 
